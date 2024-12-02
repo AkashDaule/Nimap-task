@@ -1,0 +1,56 @@
+.movie-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .movie-card {
+    text-align: center;
+  }
+  
+  .movie-poster {
+    width: 60% !important;
+    height: auto;
+
+  }
+  
+  .movie-title {
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
+  
+  .movie-rating {
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+  }
+  
+  .page-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .page-button.active {
+    background-color: #e50914;
+  }
+  
+  .page-button:hover {
+    background-color: #555;
+  }
