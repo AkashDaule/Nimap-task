@@ -7,20 +7,16 @@ import "./Home.css";
 const Home = () => {
   const dispatch = useDispatch();
   const { movies, currentPage, totalPages, loading } = useSelector((state) => state.movies);
-
   useEffect(() => {
     dispatch(fetchMovies(currentPage));
   }, [dispatch, currentPage]);
-
   const paginate = (pageNumber) => {
     if (pageNumber >= 1 && pageNumber <= totalPages) {
       dispatch(setCurrentPage(pageNumber));
     }
   };
-
   const pageNumbers = [];
   const maxPagesToShow = 5;
-
   let startPage = Math.max(currentPage - Math.floor(maxPagesToShow / 2), 1);
   let endPage = startPage + maxPagesToShow - 1;
 

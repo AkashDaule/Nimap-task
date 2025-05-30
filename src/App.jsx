@@ -19,8 +19,6 @@ function App() {
           <Route path="/search" element={<SearchMovies />} />
         </Routes>
       </Router>
-
-
     </>
   )
 }
