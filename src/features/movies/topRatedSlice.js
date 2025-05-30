@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { fetchTopRatedMovies } from "../../api/movieApi";
+import { useEffect } from "react";
 
 export const fetchTopRated = createAsyncThunk(
   "topRated/fetchTopRated",
@@ -43,3 +44,24 @@ const topRatedSlice = createSlice({
 });
 
 export default topRatedSlice.reducer;
+
+
+
+
+// useEffect(()=>{
+// return
+// }[]);
+
+// mypromise((resolve,reject)={
+//   if(succss){
+//     return("Data fetched succesfully");
+
+//   }
+//   else(reject){
+// return("Data is not fetched")
+//   }
+
+
+// })
+// mypromise.then()
+
